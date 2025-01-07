@@ -1,0 +1,131 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the app */
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+    text-align: center;
+}
+
+/* Styling the header */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input section inside a card */
+.input-section {
+    background-color: #f9f9f9;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+#taskInput {
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #4CAF50;
+}
+
+/* Add button styling */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Task List Styling (card-like design for the list) */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/* Each task item inside the card view with box shadow */
+.task-list li {
+    background-color: #ffffff;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Completed tasks style */
+.task-list li.completed {
+    background-color: #d3ffd3;
+    text-decoration: line-through;
+}
+
+/* Delete button styling */
+button.delete-btn {
+    background-color: #f44336;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Task Counter Styling */
+#taskCounter {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Accessibility and animations */
+button:focus, #taskInput:focus {
+    outline: none;
+    border-color: #0078d4;
+}
+
+.task-list li:hover {
+    transform: scale(1.05);
+}
+
+input:disabled, button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
